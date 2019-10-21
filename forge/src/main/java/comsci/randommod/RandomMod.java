@@ -57,5 +57,5 @@ public class RandomMod
 			return new ResourceLocation(modid,name);
 		}
 	}
-	//at test
+	
 }
