@@ -48,7 +48,10 @@ public class RandomMod
 		@SubscribeEvent
 		public static void registerItems(final RegistryEvent.Register<Item> event)
 		{
-			ItemList.tutorial_item=new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("tutorial_item"));
+			event.getRegistry().registerAll
+			(
+					ItemList.pickle_item=new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("pickle_item"))
+			);
 			
 			logger.info("Items registered.");
 		}
@@ -57,5 +60,4 @@ public class RandomMod
 			return new ResourceLocation(modid,name);
 		}
 	}
-	//at test
 }
