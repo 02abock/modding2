@@ -3,7 +3,10 @@ package comsci.randommod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import comsci.randommod.list.BlockList;
 import comsci.randommod.list.ItemList;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.ResourceLocation;
@@ -53,6 +56,17 @@ public class RandomMod
 			);
 			logger.info("Items registered.");
 		}
+		
+		@SubscribeEvent
+		public static void registerBlocks(final RegistryEvent.Register<Block> event)
+		{
+			event.getRegistry().registerAll(
+				BlockList.barnabic_ore=new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, resistanceIn))
+			);
+			logger.info("Items registered.");
+		}
+		
+		
 		
 		private static ResourceLocation location(String name)
 		{
