@@ -49,7 +49,7 @@ public class RandomMod
 		public static void registerItems(final RegistryEvent.Register<Item> event)
 		{
 			event.getRegistry().registerAll(
-					ItemList.tore=new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("tutorial_item"))
+					ItemList.barnabic_ingot=new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("barnabic_ingot"))
 			);
 			logger.info("Items registered.");
 		}

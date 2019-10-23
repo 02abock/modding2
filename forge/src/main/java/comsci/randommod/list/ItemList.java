@@ -4,6 +4,6 @@ import net.minecraft.item.Item;
 
 public class ItemList 
 {
-	public static Item tore;
+	public static Item barnabic_ingot;
 
 }
