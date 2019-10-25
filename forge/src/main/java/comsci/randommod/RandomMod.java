@@ -6,11 +6,14 @@ import org.apache.logging.log4j.Logger;
 import comsci.randommod.list.BlockList;
 import comsci.randommod.list.ItemList;
 import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -52,7 +55,9 @@ public class RandomMod
 		public static void registerItems(final RegistryEvent.Register<Item> event)
 		{
 			event.getRegistry().registerAll(
-					ItemList.barnabic_ingot=new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("barnabic_ingot"))
+					ItemList.barnabic_ingot=new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("barnabic_ingot")),
+					ItemList.barnabic_ore=new BlockItem(BlockList.barnabic_ore, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.barnabic_ore.getRegistryName())
+					
 			);
 			logger.info("Items registered.");
 		}
@@ -61,9 +66,9 @@ public class RandomMod
 		public static void registerBlocks(final RegistryEvent.Register<Block> event)
 		{
 			event.getRegistry().registerAll(
-				BlockList.barnabic_ore=new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, resistanceIn))
+				BlockList.barnabic_ore=new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 10.0f).sound(SoundType.STONE).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("barnabic_ore"))
 			);
-			logger.info("Items registered.");
+			logger.info("Blcoks registered.");
 		}
 		
 		
