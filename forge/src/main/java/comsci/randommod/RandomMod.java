@@ -3,8 +3,13 @@ package comsci.randommod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import comsci.randommod.list.BlockList;
 import comsci.randommod.list.ItemList;
+import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
@@ -50,12 +55,22 @@ public class RandomMod
 		{
 			event.getRegistry().registerAll
 			(
-					ItemList.pickle_item=new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("pickle_item"))
+				ItemList.pickle_item = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("pickle_item")),
+				ItemList.cheese_block = new BlockItem(BlockList.cheese_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.cheese_block.getRegistryName())
 			);
 			
 			logger.info("Items registered.");
 		}
 		
+		public static void registerBlocks(final RegistryEvent.Register<Block> event)
+		{
+			event.getRegistry().registerAll
+			(
+				BlockList.cheese_block = new Block(Block.Properties.create(Material.MISCELLANEOUS).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.WOOD)).setRegistryName(location("cheese_block"))
+			);
+			
+			logger.info("Blocks registered.");
+		}
 		private static ResourceLocation location(String name) {
 			return new ResourceLocation(modid,name);
 		}
