@@ -27,7 +27,8 @@ public class RandomMod
 {
 	public static RandomMod instance;
 	public static final String modid = "randommod";
-	private static final Logger logger = LogManager.getLogger(modid);//figure out
+	private static final Logger logger = LogManager.getLogger(modid);
+	public static final ItemGroup random = new RandomItemGroup("random");
 	
 	public RandomMod() 
 	{
@@ -55,10 +56,10 @@ public class RandomMod
 		public static void registerItems(final RegistryEvent.Register<Item> event)
 		{
 			event.getRegistry().registerAll(
-					ItemList.barnabic_ingot=new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("barnabic_ingot")),
-					ItemList.barnabic_ore=new BlockItem(BlockList.barnabic_ore, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.barnabic_ore.getRegistryName()),
-					ItemList.pickle_item = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("pickle_item")),
-					ItemList.cheese_block = new BlockItem(BlockList.cheese_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.cheese_block.getRegistryName())
+					ItemList.barnabic_ingot=new Item(new Item.Properties().group(random)).setRegistryName(location("barnabic_ingot")),
+					ItemList.barnabic_ore=new BlockItem(BlockList.barnabic_ore, new Item.Properties().group(random)).setRegistryName(BlockList.barnabic_ore.getRegistryName()),
+					ItemList.pickle_item = new Item(new Item.Properties().group(random)).setRegistryName(location("pickle_item")),
+					ItemList.cheese_block = new BlockItem(BlockList.cheese_block, new Item.Properties().group(random)).setRegistryName(BlockList.cheese_block.getRegistryName())
 					
 			);
 			logger.info("Items registered.");
