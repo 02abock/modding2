@@ -56,7 +56,9 @@ public class RandomMod
 		{
 			event.getRegistry().registerAll(
 					ItemList.barnabic_ingot=new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("barnabic_ingot")),
-					ItemList.barnabic_ore=new BlockItem(BlockList.barnabic_ore, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.barnabic_ore.getRegistryName())
+					ItemList.barnabic_ore=new BlockItem(BlockList.barnabic_ore, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.barnabic_ore.getRegistryName()),
+					ItemList.pickle_item = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("pickle_item")),
+					ItemList.cheese_block = new BlockItem(BlockList.cheese_block, new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)).setRegistryName(BlockList.cheese_block.getRegistryName())
 					
 			);
 			logger.info("Items registered.");
@@ -66,7 +68,8 @@ public class RandomMod
 		public static void registerBlocks(final RegistryEvent.Register<Block> event)
 		{
 			event.getRegistry().registerAll(
-				BlockList.barnabic_ore=new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 10.0f).sound(SoundType.STONE).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("barnabic_ore"))
+				BlockList.barnabic_ore=new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 10.0f).sound(SoundType.STONE).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("barnabic_ore")),
+				BlockList.cheese_block = new Block(Block.Properties.create(Material.MISCELLANEOUS).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.WOOD)).setRegistryName(location("cheese_block"))
 			);
 			logger.info("Blcoks registered.");
 		}

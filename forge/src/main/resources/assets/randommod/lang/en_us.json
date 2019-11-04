@@ -1,5 +1,7 @@
 {
 "item.randommod.barnabic_ingot": "Barnabic Ingot",
-"block.randommod.barnabic_ore": "Barnabic Ore"
+"block.randommod.barnabic_ore": "Barnabic Ore",
+"item.randommod.pickle_item": "Pickle", 
+"block.randommod.cheese_block": "Cheese"
 
 }
