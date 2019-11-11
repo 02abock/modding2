@@ -54,7 +54,8 @@ public enum ToolMaterialList implements IItemTier
 	}
 
 	@Override
-	public Ingredient getRepairMaterial() {
+	public Ingredient getRepairMaterial() 
+	{
 		return Ingredient.fromItems(this.repairMaterial);
 				
 	}

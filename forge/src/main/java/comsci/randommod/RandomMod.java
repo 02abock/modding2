@@ -5,12 +5,14 @@ import org.apache.logging.log4j.Logger;
 
 import comsci.randommod.list.BlockList;
 import comsci.randommod.list.ItemList;
+import comsci.randommod.list.ToolMaterialList;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.SwordItem;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.ToolType;
@@ -58,10 +60,11 @@ public class RandomMod
 			event.getRegistry().registerAll(
 					ItemList.barnabic_ingot=new Item(new Item.Properties().group(random)).setRegistryName(location("barnabic_ingot")),
 					ItemList.barnabic_ore=new BlockItem(BlockList.barnabic_ore, new Item.Properties().group(random)).setRegistryName(BlockList.barnabic_ore.getRegistryName()),
-					ItemList.pickle_item = new Item(new Item.Properties().group(random)).setRegistryName(location("pickle_item")),
-					ItemList.cheese_block = new BlockItem(BlockList.cheese_block, new Item.Properties().group(random)).setRegistryName(BlockList.cheese_block.getRegistryName())
+					ItemList.cheese_block = new BlockItem(BlockList.cheese_block, new Item.Properties().group(random)).setRegistryName(BlockList.cheese_block.getRegistryName()),
 					
-			);
+					ItemList.pickle_item = new SwordItem(ToolMaterialList.pickle, 0, 1.0f, new Item.Properties().group(random)).setRegistryName(location("pickle_item"))
+
+					);
 			logger.info("Items registered.");
 		}
 		
