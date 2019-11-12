@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	
+	"ingredient":{"item" :"randommod:barnabic_ore"},
+	"result" : "randommod:barnabic_ingot",
+	"experience": 0.35,
+	"cookingtime": 200
+
+}
