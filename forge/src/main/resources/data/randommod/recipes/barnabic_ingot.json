@@ -3,7 +3,7 @@
 	
 	"ingredient":{"item" :"randommod:barnabic_ore"},
 	"result" : "randommod:barnabic_ingot",
-	"experience": 0.35,
+	"experience": 0.45,
 	"cookingtime": 200
 
 }
