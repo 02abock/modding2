@@ -8,6 +8,7 @@ public class ItemList
 	public static Item barnabic_ore;
 	public static Item pickle_item;
 	public static Item cheese_block;
+	public static Item elongated_donut_item;
 
 
 }
