@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 import comsci.randommod.list.BlockList;
 import comsci.randommod.list.ItemList;
 import comsci.randommod.list.ToolMaterialList;
+import comsci.randommod.world.OreGeneration;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -18,10 +19,11 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod("randommod")
 
@@ -36,13 +38,16 @@ public class RandomMod
 	{
 		instance = this;
 		
+		ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, );
+		
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientRegistries);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 	
-	private void setup(final FMLCommonSetupEvent event) 
+	private void setup(final FMLCommonSetupEvent event) s
 	{
+		OreGeneration.setupOreGeneration();
 		logger.info("setup method registered");
 	}
 	
