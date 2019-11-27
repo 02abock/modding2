@@ -73,11 +73,12 @@ public class RandomMod
 		public static void registerItems(final RegistryEvent.Register<Item> event)
 		{
 			event.getRegistry().registerAll(
-					ItemList.barnabic_ingot=new Item(new Item.Properties().group(random)).setRegistryName(location("barnabic_ingot")),
-					ItemList.barnabic_ore=new BlockItem(BlockList.barnabic_ore, new Item.Properties().group(random)).setRegistryName(BlockList.barnabic_ore.getRegistryName()),
+					ItemList.barnabic_ingot = new Item(new Item.Properties().group(random)).setRegistryName(location("barnabic_ingot")),
+					ItemList.barnabic_ore = new BlockItem(BlockList.barnabic_ore, new Item.Properties().group(random)).setRegistryName(BlockList.barnabic_ore.getRegistryName()),
 					ItemList.cheese_block = new BlockItem(BlockList.cheese_block, new Item.Properties().group(random)).setRegistryName(BlockList.cheese_block.getRegistryName()),
-					ItemList.elongated_donut_item=new Item(new Item.Properties().group(random)).setRegistryName(location("elongated_donut_item")),
-					
+					ItemList.elongated_donut = new Item(new Item.Properties().group(random)).setRegistryName(location("elongated_donut")),
+					ItemList.dough = new Item(new Item.Properties().group(random)).setRegistryName(location("dough")),
+
 					ItemList.pickle_item = new SwordItem(ToolMaterialList.pickle, 0, 1.0f, new Item.Properties().group(random)).setRegistryName(location("pickle_item"))
 
 					);
