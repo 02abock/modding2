@@ -1,6 +1,7 @@
 {
-    "parent": "block/cube_all",
+    "parent": "block/cube_column",
     "textures": {
-        "all": "randommod:block/cheese_block"
+        "end": "randommod:block/cheese_block",
+        "side": "randommod:block/cheese_block_rind"
     }
 }
