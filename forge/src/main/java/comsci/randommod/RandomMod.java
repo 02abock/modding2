@@ -74,11 +74,21 @@ public class RandomMod
 		{
 			event.getRegistry().registerAll(
 					ItemList.barnabic_ingot = new Item(new Item.Properties().group(random)).setRegistryName(location("barnabic_ingot")),
+					ItemList.flour = new Item(new Item.Properties().group(random)).setRegistryName(location("flour")),
+					ItemList.powdered_sugar = new Item(new Item.Properties().group(random)).setRegistryName(location("powdered_sugar")),					
+					ItemList.glaze = new Item(new Item.Properties().group(random)).setRegistryName(location("glaze")),
+					ItemList.unfried_elongated_donut = new Item(new Item.Properties().group(random)).setRegistryName(location("unfried_elongated_donut")),
+					ItemList.elongated_donut = new Item(new Item.Properties().group(random)).setRegistryName(location("elongated_donut")),
+					ItemList.unfried_donut = new Item(new Item.Properties().group(random)).setRegistryName(location("unfried_donut")),
+					ItemList.donut = new Item(new Item.Properties().group(random)).setRegistryName(location("donut")),
+					ItemList.glazed_donut = new Item(new Item.Properties().group(random)).setRegistryName(location("glazed_donut")),
+					ItemList.powdered_donut = new Item(new Item.Properties().group(random)).setRegistryName(location("powdered_donut")),
+					ItemList.pretzel = new Item(new Item.Properties().group(random)).setRegistryName(location("pretzel")),
+					ItemList.unfried_pretzel = new Item(new Item.Properties().group(random)).setRegistryName(location("unfried_pretzel")),
+					ItemList.dough = new Item(new Item.Properties().group(random)).setRegistryName(location("dough")),
 					ItemList.barnabic_ore = new BlockItem(BlockList.barnabic_ore, new Item.Properties().group(random)).setRegistryName(BlockList.barnabic_ore.getRegistryName()),
 					ItemList.cheese_block = new BlockItem(BlockList.cheese_block, new Item.Properties().group(random)).setRegistryName(BlockList.cheese_block.getRegistryName()),
-					ItemList.elongated_donut = new Item(new Item.Properties().group(random)).setRegistryName(location("elongated_donut")),
-					ItemList.dough = new Item(new Item.Properties().group(random)).setRegistryName(location("dough")),
-
+					
 					ItemList.pickle_item = new SwordItem(ToolMaterialList.pickle, 0, 1.0f, new Item.Properties().group(random)).setRegistryName(location("pickle_item"))
 
 					);
