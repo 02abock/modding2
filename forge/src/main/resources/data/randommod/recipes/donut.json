@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	
+	"ingredient":{"item" :"randommod:unfried_donut"},
+	"result" : "randommod:donut",
+	"experience": 0.45,
+	"cookingtime": 200
+
+}

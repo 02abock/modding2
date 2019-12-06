@@ -1,8 +1,21 @@
 {
-"item.randommod.barnabic_ingot": "Barnabic Ingot",
-"block.randommod.barnabic_ore": "Barnabic Ore",
-"item.randommod.pickle_item": "Pickle", 
-"block.randommod.cheese_block": "Cheese",
-"itemGroup.random" : "Random Item Group"
+	"item.randommod.barnabic_ingot": "Barnabic Ingot",
+	"item.randommod.unfried_elongated_donut": "Unfried Elongated Donut",
+	"item.randommod.elongated_donut": "Elongated Donut",
+	"item.randommod.pickle_item": "Pickle", 
+	"item.randommod.dough": "Dough",
+	"item.randommod.flour": "Flour",
+	"item.randommod.powdered_sugar": "Powdered Sugar",
+	"item.randommod.glaze": "Glaze",
+	"item.randommod.unfried_donut": "Unfried Donut",
+	"item.randommod.donut" : "Donut",
+	"item.randommod.glazed_donut": "Glazed Donut",
+	"item.randommod.powdered_donut": "Powdered Donut",
+	"item.randommod.unfried_pretzel": "Unfried Pretzel",
+	"item.randommod.pretzel": "Pretzel",
+	
+	"block.randommod.barnabic_ore": "Barnabic Ore",
+	"block.randommod.cheese_block": "Cheese",
+	"itemGroup.random" : "Random Items"
 
 }
