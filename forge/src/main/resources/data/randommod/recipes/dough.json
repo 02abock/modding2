@@ -1,0 +1,13 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	
+	"ingredients":
+	[
+		{"item": "randommod:flour"},
+		{"item": "minecraft:sugar"},
+		{"item": "minecraft:milk_bucket"},
+		{"item": "minecraft:egg"}
+	],
+	
+	"result": {"item": "randommod:dough"}
+}

@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	
+	"ingredient":{"item" :"minecraft:sugar"},
+	"result" : "randommod:glaze",
+	"experience": 0.45,
+	"cookingtime": 200
+
+}

@@ -1,0 +1,9 @@
+{
+	"type": "minecraft:smelting",
+	
+	"ingredient":{"item" :"randommod:unfried_pretzel"},
+	"result" : "randommod:pretzel",
+	"experience": 0.45,
+	"cookingtime": 200
+
+}
