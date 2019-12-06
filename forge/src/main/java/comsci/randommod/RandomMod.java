@@ -90,7 +90,7 @@ public class RandomMod
 				BlockList.barnabic_ore=new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 10.0f).sound(SoundType.STONE).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("barnabic_ore")),
 				BlockList.cheese_block = new Block(Block.Properties.create(Material.MISCELLANEOUS).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.WOOD)).setRegistryName(location("cheese_block"))
 			);
-			logger.info("Blcoks registered.");
+			logger.info("Blocks registered.");
 		}
 		
 		

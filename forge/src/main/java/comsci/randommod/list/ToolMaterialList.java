@@ -7,7 +7,7 @@ import net.minecraft.item.crafting.Ingredient;
 public enum ToolMaterialList implements IItemTier
 {
 	pickle(100.0f, 10.0f, 1000, 0, 25, ItemList.barnabic_ingot);
-	//to add new, 
+	//to add new ==> , 
 	
 	private float attackDamage, efficiency;
 	private int durability, harvestLevel, enchantability;
