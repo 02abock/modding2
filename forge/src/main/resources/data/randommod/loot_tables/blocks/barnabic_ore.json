@@ -9,7 +9,7 @@
           "name": "randommod:barnabic_ore"
         }
       ],
-      "conditions":    [
+      "conditions":  [
         {
           "condition": "minecraft:survives_explosion"
         }
