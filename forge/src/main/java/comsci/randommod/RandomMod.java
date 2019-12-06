@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 import comsci.randommod.config.Config;
 import comsci.randommod.list.BlockList;
+import comsci.randommod.list.FoodList;
 import comsci.randommod.list.ItemList;
 import comsci.randommod.list.ToolMaterialList;
 import comsci.randommod.world.OreGeneration;
@@ -77,15 +78,17 @@ public class RandomMod
 					ItemList.flour = new Item(new Item.Properties().group(random)).setRegistryName(location("flour")),
 					ItemList.powdered_sugar = new Item(new Item.Properties().group(random)).setRegistryName(location("powdered_sugar")),					
 					ItemList.glaze = new Item(new Item.Properties().group(random)).setRegistryName(location("glaze")),
-					ItemList.unfried_elongated_donut = new Item(new Item.Properties().group(random)).setRegistryName(location("unfried_elongated_donut")),
-					ItemList.elongated_donut = new Item(new Item.Properties().group(random)).setRegistryName(location("elongated_donut")),
-					ItemList.unfried_donut = new Item(new Item.Properties().group(random)).setRegistryName(location("unfried_donut")),
-					ItemList.donut = new Item(new Item.Properties().group(random)).setRegistryName(location("donut")),
-					ItemList.glazed_donut = new Item(new Item.Properties().group(random)).setRegistryName(location("glazed_donut")),
-					ItemList.powdered_donut = new Item(new Item.Properties().group(random)).setRegistryName(location("powdered_donut")),
-					ItemList.pretzel = new Item(new Item.Properties().group(random)).setRegistryName(location("pretzel")),
-					ItemList.unfried_pretzel = new Item(new Item.Properties().group(random)).setRegistryName(location("unfried_pretzel")),
-					ItemList.dough = new Item(new Item.Properties().group(random)).setRegistryName(location("dough")),
+					
+					ItemList.unfried_elongated_donut = new Item(new Item.Properties().food(FoodList.unfriedElongatedDonutFood).group(random)).setRegistryName(location("unfried_elongated_donut")),
+					ItemList.elongated_donut = new Item(new Item.Properties().food(FoodList.elongatedDonutFood).group(random)).setRegistryName(location("elongated_donut")),
+					ItemList.unfried_donut = new Item(new Item.Properties().food(FoodList.unfriedDonutFood).group(random)).setRegistryName(location("unfried_donut")),
+					ItemList.donut = new Item(new Item.Properties().food(FoodList.donutFood).group(random)).setRegistryName(location("donut")),
+					ItemList.glazed_donut = new Item(new Item.Properties().food(FoodList.glazedDonutFood).group(random)).setRegistryName(location("glazed_donut")),
+					ItemList.powdered_donut = new Item(new Item.Properties().food(FoodList.powderedDonutFood).group(random)).setRegistryName(location("powdered_donut")),
+					ItemList.pretzel = new Item(new Item.Properties().food(FoodList.pretzelFood).group(random)).setRegistryName(location("pretzel")),
+					ItemList.unfried_pretzel = new Item(new Item.Properties().food(FoodList.unfriedPretzelFood).group(random)).setRegistryName(location("unfried_pretzel")),
+					ItemList.dough = new Item(new Item.Properties().food(FoodList.doughFood).group(random)).setRegistryName(location("dough")),
+					
 					ItemList.barnabic_ore = new BlockItem(BlockList.barnabic_ore, new Item.Properties().group(random)).setRegistryName(BlockList.barnabic_ore.getRegistryName()),
 					ItemList.cheese_block = new BlockItem(BlockList.cheese_block, new Item.Properties().group(random)).setRegistryName(BlockList.cheese_block.getRegistryName()),
 					
