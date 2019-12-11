@@ -88,7 +88,7 @@ public class RandomMod
 					ItemList.pretzel = new Item(new Item.Properties().food(FoodList.pretzelFood).group(random)).setRegistryName(location("pretzel")),
 					ItemList.unfried_pretzel = new Item(new Item.Properties().food(FoodList.unfriedPretzelFood).group(random)).setRegistryName(location("unfried_pretzel")),
 					ItemList.dough = new Item(new Item.Properties().food(FoodList.doughFood).group(random)).setRegistryName(location("dough")),
-					
+					ItemList.barnabic_block = new BlockItem(BlockList.barnabic_block, new Item.Properties().group(random)).setRegistryName(BlockList.barnabic_block.getRegistryName()),
 					ItemList.barnabic_ore = new BlockItem(BlockList.barnabic_ore, new Item.Properties().group(random)).setRegistryName(BlockList.barnabic_ore.getRegistryName()),
 					ItemList.cheese_block = new BlockItem(BlockList.cheese_block, new Item.Properties().group(random)).setRegistryName(BlockList.cheese_block.getRegistryName()),
 					
@@ -103,8 +103,9 @@ public class RandomMod
 		{
 			event.getRegistry().registerAll(
 				BlockList.barnabic_ore=new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 10.0f).sound(SoundType.STONE).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName(location("barnabic_ore")),
-				BlockList.cheese_block = new Block(Block.Properties.create(Material.MISCELLANEOUS).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.WOOD)).setRegistryName(location("cheese_block"))
-			);
+				BlockList.cheese_block = new Block(Block.Properties.create(Material.MISCELLANEOUS).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.WOOD)).setRegistryName(location("cheese_block")),
+				BlockList.barnabic_block=new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(3.0f,10.0f).sound(SoundType.METAL).harvestLevel(2).harvestTool(ToolType.PICKAXE)).setRegistryName("barnabic_block")
+					);
 			logger.info("Blocks registered.");
 		}
 		

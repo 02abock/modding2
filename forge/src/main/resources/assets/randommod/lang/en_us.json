@@ -16,6 +16,7 @@
 	
 	"block.randommod.barnabic_ore": "Barnabic Ore",
 	"block.randommod.cheese_block": "Cheese",
+	"block.randommod.barnabic_block":"Barnabic Block",
 	"itemGroup.random" : "Random Items"
 
 }
