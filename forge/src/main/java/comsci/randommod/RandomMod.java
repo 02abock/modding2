@@ -95,7 +95,7 @@ public class RandomMod
 					ItemList.pickle_item = new SwordItem(ToolMaterialList.pickle, 0, 1.0f, new Item.Properties().group(random)).setRegistryName(location("pickle_item"))
 
 					);
-			logger.info("Items registered.");
+			logger.info("Items registered.");//test
 		}
 		
 		@SubscribeEvent
