@@ -8,6 +8,7 @@ import comsci.randommod.list.BlockList;
 import comsci.randommod.list.FoodList;
 import comsci.randommod.list.ItemList;
 import comsci.randommod.list.ToolMaterialList;
+import comsci.randommod.util.Reference;
 import comsci.randommod.world.OreGeneration;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -29,16 +30,16 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
 
-@Mod("randommod")
+@Mod(Reference.MOD_ID)
 
-public class RandomMod 
+public class Main 
 {
-	public static RandomMod instance;
-	public static final String modid = "randommod";
-	private static final Logger logger = LogManager.getLogger(modid);
+	
+	public static Main instance;
+	private static final Logger logger = LogManager.getLogger(Reference.MOD_ID);
 	public static final ItemGroup random = new RandomItemGroup("random");
 	
-	public RandomMod() 
+	public Main() 
 	{
 		instance = this;
 		
@@ -113,7 +114,7 @@ public class RandomMod
 		
 		private static ResourceLocation location(String name)
 		{
-			return new ResourceLocation(modid,name);
+			return new ResourceLocation(Reference.MOD_ID,name);
 		}
 	}
 	
