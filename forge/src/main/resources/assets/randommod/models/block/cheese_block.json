@@ -1,7 +1,138 @@
 {
-    "parent": "block/cube_column",
+    "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
     "textures": {
-        "end": "randommod:block/cheese_block",
-        "side": "randommod:block/cheese_block_rind"
-    }
+        "cheese_block": "randommod:block/cheese_block",
+        "cheese_block_rind": "randommod:block/cheese_block_rind"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+    "elements": [
+        {
+            "name": "EW2",
+            "from": [ 9, 0, 5 ], 
+            "to": [ 15, 8, 12 ], 
+            "faces": {
+                "north": { "texture": "#cheese_block", "uv": [ 0, 0, 6, 8 ] },
+                "east": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 7, 8 ] },
+                "south": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 6, 8 ] },
+                "up": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 6, 7 ] },
+                "down": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 6, 7 ] }
+            }
+        },
+        {
+            "name": "NSblock",
+            "from": [ 7, 0, 0 ], 
+            "to": [ 9, 8, 16 ], 
+            "faces": {
+                "north": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 2, 8 ] },
+                "east": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 16, 8 ] },
+                "south": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 2, 8 ] },
+                "west": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 16, 8 ] },
+                "up": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 2, 16 ] },
+                "down": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 2, 16 ] }
+            }
+        },
+        {
+            "name": "EWblock",
+            "from": [ 0, 0, 7 ], 
+            "to": [ 16, 8, 9 ], 
+            "faces": {
+                "north": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 16, 8 ] },
+                "east": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 2, 8 ] },
+                "south": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 16, 8 ] },
+                "west": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 2, 8 ] },
+                "up": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 16, 2 ] },
+                "down": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 16, 2 ] }
+            }
+        },
+        {
+            "name": "EW2",
+            "from": [ 1, 0, 4 ], 
+            "to": [ 7, 8, 12 ], 
+            "faces": {
+                "north": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 6, 8 ] },
+                "south": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 6, 8 ] },
+                "west": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 8, 8 ] },
+                "up": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 6, 8 ] },
+                "down": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 6, 8 ] }
+            }
+        },
+        {
+            "name": "NS2",
+            "from": [ 4, 0, 10 ], 
+            "to": [ 12, 8, 15 ], 
+            "faces": {
+                "east": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 5, 8 ] },
+                "south": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 8, 8 ] },
+                "west": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 5, 8 ] },
+                "up": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 8, 5 ] },
+                "down": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 8, 5 ] }
+            }
+        },
+        {
+            "name": "NS2",
+            "from": [ 4, 0, 1 ], 
+            "to": [ 11, 8, 6 ], 
+            "faces": {
+                "north": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 7, 8 ] },
+                "east": { "texture": "#cheese_block", "uv": [ 0, 0, 5, 8 ] },
+                "west": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 5, 8 ] },
+                "up": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 7, 5 ] },
+                "down": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 7, 5 ] }
+            }
+        },
+        {
+            "name": "EW3",
+            "from": [ 2.5, 0, 12 ], 
+            "to": [ 13.5, 8, 14 ], 
+            "faces": {
+                "east": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 2, 8 ] },
+                "south": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 11, 8 ] },
+                "west": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 2, 8 ] },
+                "up": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 11, 2 ] },
+                "down": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 11, 2 ] }
+            }
+        },
+        {
+            "name": "EW3",
+            "from": [ 2.5, 0, 2 ], 
+            "to": [ 4.5, 8, 4 ], 
+            "faces": {
+                "north": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 2, 8 ] },
+                "west": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 2, 8 ] },
+                "up": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 2, 2 ] },
+                "down": { "texture": "#cheese_block_rind", "uv": [ 0, 0, 2, 2 ] }
+            }
+        }
+    ]
 }
